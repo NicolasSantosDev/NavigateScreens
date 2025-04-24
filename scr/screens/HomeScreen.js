@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet, Dimensions } from 'react-native';
 
-const windowWhite = Dimensions.get('windows').width;
+const windowWidth = Dimensions.get('window').width;
 
 export default function HomeScreen({ navigation }) {
     return (
@@ -14,16 +14,16 @@ export default function HomeScreen({ navigation }) {
                 />
             </View>
             <View style={styles.buttonContainer}>
-                <Button>
+                <Button
                 title="Go to Profile"
-                onPress={() => navigation.navigate('Details')}
-                </Button>
+                onPress={() => navigation.navigate('Profile')}
+                />
             </View>
         </View>
     );
 }
 
-const styles =StyleSheet({
+const styles =StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
