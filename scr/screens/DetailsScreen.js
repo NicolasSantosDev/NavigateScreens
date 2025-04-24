@@ -16,7 +16,7 @@ export default function DetailsScreen({ navigation }) {
             <View style={styles.buttonContainer}>
                 <Button
                 title="Go to Profile"
-                onPres={() => navigation.navigate('Profile')}
+                onPress={() => navigation.navigate('Profile')}
                 />
             </View>
         </View>
